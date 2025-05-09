@@ -1,3 +1,96 @@
+body {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-Grayish-Blue);
+}
+
+#content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  background-color: white;
+  /* padding: 10px; */
+  border-radius: 20px;
+  box-shadow: 1px 0px 5px rgba(0,0,0,.5);
+}
+
+#feature-img {
+  background-image: url(../images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 320px;
+  height: 210px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+h1 {
+  font: var(--text-lg);
+  padding: 34px;
+  opacity: .7;
+}
+
+p {
+  font: var(--text-parag);
+  padding-inline: 34px;
+  opacity: .7;
+}
+
+.avatar {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  /* background-color: red; */
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.pic-avatar {
+  background-image: url(../images/avatar-michelle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.info-avatar {
+  display: grid;
+  grid-gap: 5px;
+  justify-content: flex-start;
+  opacity: .7;
+  /* background-color: red; */
+}
+
+.info-name {
+  font: var(--text-lg);
+}
+
+.info-date {
+  font: var(--text);
+}
+
+.btn-share {
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.share {
+  background-image: url(../images/icon-share.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  justify-self: center;
+}
+
 .attribution {
   font: var(--text-footer);
   text-align: center;
