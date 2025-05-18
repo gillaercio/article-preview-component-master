@@ -19,5 +19,6 @@ html {
   --text-md: 700 1.4em/150% var(--manrope);
   --text-parag: 400 1.3em/150% var(--manrope);
   --text: 400 1.2em/120% var(--manrope);
+  --text-sm: 400 1.1em/120% var(--manrope);
   --text-footer: 400 1.2em/150% var(--manrope);
 }
