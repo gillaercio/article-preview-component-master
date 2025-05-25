@@ -14,8 +14,8 @@ body {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-  transition: width .4s, height .4s;
-  transition-timing-function: ease;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+
 }
 
 #feature-img {
@@ -26,6 +26,7 @@ body {
   height: 210px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 h1 {
@@ -80,45 +81,29 @@ p {
   font: var(--text);
 }
 
-/* .share-bar {
-  background-color: var(--Very-Dark-Grayish-Blue);
-  background-color: orange;
-  letter-spacing: 2px;
-  padding: 15px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-between;
-  width: 100%;
-  grid-gap: 10px;
-  align-items: center;
-  display: none;
-} */
-
-.messageShare {
+.messageShare, .messageBar {
   color: white;
-  font: var(--text-sm);
+  font: var(--text-md);
   opacity: .6;
   letter-spacing: 2px;
 }
 
-.social-icons {
+.social-icons, .social-icons-bar {
   display: grid;
   grid-template-columns: repeat(3,auto);
-  grid-gap: 15px;
-  padding: 15px;
+  grid-gap: 10px;
+  padding: 5px;
   justify-content: space-between;
   align-items: center;
 }
 
-.social-icons img {
+.social-icons img, .social-icons-bar img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
 
-.messageShare, .social-icons {
+.messageShare, .messageBar, .social-icons, .social-icons-bar {
   display: none;
 }
 
@@ -165,8 +150,7 @@ p {
     width: 896px;
     grid-template-areas:
     "image info";
-    transition: width .4s, height .4s;
-    transition-timing-function: ease;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   }
 
   #feature-img {
@@ -209,6 +193,21 @@ p {
     font-size: 1.4em;
   }
 
+  .share-bar {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    padding: 10px;
+    border-radius: 20px;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    position: absolute;
+    top: 390px;
+    right: 40px;
+    width: 300px;
+    grid-gap: 10px;
+    align-items: center;
+    display: none;
+  }
+
   .attribution {
     font-size: 1.7em;
   }
@@ -219,14 +218,12 @@ p {
     width: 1194px;
     grid-template-areas:
     "image info";
-    transition: width .4s, height .4s;
-    transition-timing-function: ease;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   }
 
   #feature-img {
     grid-area: image;
     width: 478px;
-    /* height: 410px; */
     border-top-right-radius: 0px;
     border-bottom-left-radius: 20px;
   }
@@ -266,6 +263,10 @@ p {
 
   .info-date {
     font-size: 1.6em;
+  }
+
+  .share-bar {
+    top: 420px;
   }
 
   .share {
